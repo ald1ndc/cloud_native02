@@ -35,4 +35,18 @@ docker run -p<hPort:cPort> <inmagename>:<tag>
 
 ```
 # docker image ls
+# docker logs <container ID>
+# docker -rm -f $(docker ps -aq)
+
 ```
+## Docker mysql
+
+```
+# $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+
+# $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=simpl3-paZZw0rd -d mysql:latest
+
+# docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p3306:3306 -d mysql
+
+# mysql -uroot -h127.0.0.1 -p
+
